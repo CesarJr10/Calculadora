@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cesar</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1101/1101946.png" type="image/x-icon">
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+    <div>
+        <form name="container" class="container">
+        
+            <input type="textfield" name="salida" class="salida" value="" autocomplete="off" readonly>
+            
+                    <input type="button" class="buttons" value="7" onclick="document.container.salida.value+='7'">
+                    <input type="button" class="buttons" value="8" onclick="document.container.salida.value+='8'">
+                    <input type="button" class="buttons" value="9" onclick="document.container.salida.value+='9'">
+                    <input type="button" class="buttons" value="+" onclick="document.container.salida.value+='+'">
+                
+                
+                    <input type="button" class="buttons" value="4" onclick="document.container.salida.value+='4'">
+                    <input type="button" class="buttons" value="5" onclick="document.container.salida.value+='5'">
+                    <input type="button" class="buttons" value="6" onclick="document.container.salida.value+='6'">
+                    <input type="button" class="buttons" value="-" onclick="document.container.salida.value+='-'">
+            
+                    <input type="button" class="buttons" value="1" onclick="document.container.salida.value+='1'">
+                    <input type="button" class="buttons" value="2" onclick="document.container.salida.value+='2'">
+                    <input type="button" class="buttons" value="3" onclick="document.container.salida.value+='3'">
+                    <input type="button" class="buttons" value="x" onclick="document.container.salida.value+='*'">
+               
+                    <input type="button" class="buttons" value="0" onclick="document.container.salida.value+='0'">
+                    <input type="button" class="buttons" value="." onclick="document.container.salida.value+='.'">
+                    <input type="button" class="buttons" value="/" onclick="document.container.salida.value+='/'">
+                    <input type="reset" class="buttons" value="C">
+                    <input type="button" class="buttons" value="=" onclick="document.container.salida.value=eval(document.container.salida.value)">
+        </form>
+    </div>
+</body>
+</html>
